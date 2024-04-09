@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: (52, 52, 205);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cardContainer {
+  width: 100%;
+  display: flex;
+  overflow-x: auto; /* or overflow-x: hidden; */
+}
+
+.cardContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Nav Bar Strt */
+.navbar-brand img {
+  height: 40px; /* Adjust as needed */
+  width: auto;
+}
+
+.nav-link {
+  color: #000;
+}
+
+.nav-link:hover {
+  color: #ff9900; /* Amazon's primary color */
+}
+
+.dropdown-menu {
+  background-color: #f8f9fa; /* Amazon's dropdown background color */
+}
+
+.dropdown-item {
+  color: #000;
+}
+
+.dropdown-item:hover {
+  background-color: #ff9900; /* Amazon's primary color */
+  color: #fff;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 30px; /* Reduce logo size for smaller screens */
+  }
+}
+.formArea {
+  margin-left: 10px;
+  gap: 20px;
+  display: flex;
+}
+
+/* Nav  Ended*/
+
+/* Card code Start */
+.card {
+  border: none;
+  transition: all 0.3s ease;
+  width: 300px;
+  height: 200px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #d32f2f; /* Amazon's price color */
+}
+
+ul li a{
+  text-decoration: none;
+}
+
+.social-icons li{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  position: relative;
+}
+.social-icons li:hover{
+  background-color: gray;
+  border-color: white;
+  transition: all ease-in-out 1s;
+}
+.social-icons li a{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+
+/* card codr Ended */
